@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        alert("Seja bem vindo");
+
+        alert("Agora vamos executar um programara que fara um calculo bem simples para vc! \n  "+
+        "vamos calcular o resultlado do seu faturamento ANUAL");
+        var numero1 = parseInt(prompt("Digite o valor arrrecadado no ano!"));
+        var numero2 = parseInt(prompt("Digite o valor de despesas do ano!"));
+        var lucro = numero1-numero2;
+        
+        var lucroSemestral = lucro/6;
+        var lucroMensal = lucro/12;
+        var lucroDiario = lucro/365;
+
+        alert("o valor de arrecadação foi de "+numero1 +
+         "\n"+"O valor das suas despesas foram: " +numero2+
+         "\n"+"Logo o SEU Lucro anual foi de: "+ lucro+
+         "\n"+"O seu lucro Semestral foi de: "+lucroSemestral+
+         "\n"+" O seu Lucro mensal foi de: "+lucroMensal+
+         "\n"+"O seu lucro diario foi de: "+ lucroDiario);
+
+         if(lucro=50.000){
+            alert("Que bom, tivemos um bom rendimento anual");    
+         }else{
+            alert("Infelizmente estamos com um problema em nossas contas! :( ");
+         }
+          horario="05:30";
+         new date("04/02/2021");
+         alert(horario);
+    </script>
+</body>
+</html>
