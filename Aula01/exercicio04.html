@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Caixa</title>
+</head>
+
+<body>
+    <script>
+
+// Programa para analisar o fluxo de despesas do mês de um trabalhador 
+
+
+        alert("Seja bem vindo" + "\n" + "Preciso que você forneca alguns dados!");
+
+        var nome = prompt("Qual o seu Nome? ");
+        var idade = parseInt(prompt("Qual a sua idade? "));
+
+        if (idade >= 18) {
+            alert("Seja bem vido " + nome + " e que legal que você é maior de idade e tem " +
+                idade + "anos, espero que goste do nosso progrma!");
+        } else {
+
+            alert("Você não pode participar do nosso Teste!");
+            close();
+        }
+
+        var salario01 = parseInt(prompt("Qual o valor que você recebe no dia 15: "));
+        var salario02 = parseInt(prompt("Qual o valor que você no dia 30:"));
+
+        var saldo = salario01 + salario02;
+
+        alert("Opa, Já sabemos que o seu salario Mensal é de: " + saldo + "\n" +
+            "\nPreciso agora que você nos diga quais são as suas despesas mensais!\n");
+
+
+        var agua = parseInt(prompt("Quanto que você paga de agua?"));
+        var luz = parseInt(prompt("Quanto que você paga de Energia?"));
+        var internet = parseInt(prompt("Quanto que você paga de Internet?"));
+        var mercado = parseInt(prompt("Quanto que você gasta de mercado?"));
+        var aluguel = parseInt(prompt("Quanto que você paga de Alugel?"));
+
+        despesas = agua + luz + internet + mercado + aluguel;
+
+        alert("A despesa é de:" + despesas);
+
+         valorTotal= saldo - despesas; 
+
+        
+
+        alert("O valor do seu saldo é:"+valorTotal);
+        if(saldo>valorTotal){
+
+            document.writeln("Que bom vc está com um saldo posivo!\n\n\n");
+            //Calcular 30% do valor que restou 
+            valorInvestimento = (valorTotal * 0.3);
+
+            document.writeln("\nO valor que você tem que investir é:" +valorInvestimento+
+            " $, que é equivalente a 30% do seu saldo, que é: "+valorTotal+"\n")
+
+            //Mostrando o quanto ele pode ainda gastar com outras despesas.
+            restanteValor = valorTotal-valorInvestimento;
+
+            document.writeln("\nVocê ainda tem " +restanteValor+" Para gastar com outrar coisas! ");
+
+        } else{
+            alert("É hora de se Justar e ecnomizar! \n"+
+            "\n você eestá precisando economizar\n");
+            
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
