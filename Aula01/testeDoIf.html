@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        valoresAlunos = [];
+
+        for (a = 1; a <= 3; a++) {
+
+           // var nome1 = prompt("Digite o " + a + " nome");
+            //var sexo = prompt("Qual o seu sexo? \n Digite M = Masculino\n Digite F = Feminino. ");
+            //alert("Ola " + (sexo == "M" ? "Senhor " : "Senhora ") + " " + nome1);//Um ternario para uma melhor organização par ao usuario . 
+            var nota = parseFloat(prompt("Qual o valor da nota do  " + a + " aluno?"));
+
+            valoresAlunos.push(nota)// adicionando valor no ultimo INDÍCE do Array 
+        }
+
+       // var med = (valoresAlunos[0] + valoresAlunos[1] + valoresAlunos[2]) / 3;// forma direta de somar e dividir um array
+
+        var soma = valoresAlunos[0] + valoresAlunos[1] + valoresAlunos[2];// sempre lembrar que para fazer somas,precisamos
+        // colocar o Indíce começando sempre do [0]
+       // alert("A média direta é: " + med); // Imprimindo a média direta
+
+        alert("a soma é: " + soma);// mostrando a nova soma 
+
+        //var soma = (valoresAlunos[1] + valoresAlunos[2] + valoresAlunos[3]);
+        //alert(soma);
+        //med = (valoresAlunos[1] + valoresAlunos[2] + valoresAlunos[3])/3;
+
+        //Metodo tradicional de criar uma divisão de numerros guardados em memoria 
+        let med = soma / 3;
+        alert("a nova média tradicional é: " + med);
+        
+        if (med == 100 || med > 100) {
+
+            alert("Parabéns, vcs bateram a média! \nA media de vcs é: " + med.toFixed(2));// Formatando o decimal 
+
+        } else if (med > 50 && med < 100) {
+
+            alert("Vocês estão na média! \nA media de vcs é: " + med);
+
+        } else if (med > 20 && med < 50) {
+
+            alert("Vocês estão abaixo da média!\n A media de vcs é: " + med);
+
+        } else {
+            alert("Tá no ferro!\n Vcs ficaram com a media: " + med);
+        }
+
+
+        // Tentar fazer o Switch 
+        switch (med) {
+
+            case med > 100:
+
+                alert("Parabéns!")
+                break
+        }
+    </script>
+
+
+</body>
+
+</html>
