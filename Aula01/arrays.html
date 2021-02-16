@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /// Teste de uso com o POP e PUSH
+        var numeros = [10, 20];// criando e inicializando um array
+
+        var novo = numeros.push(30);
+        var novo2 = numeros.push(40);
+        var nome = numeros.push("lucas");// Adicionando no ultimo Arrey um novo dado
+
+        alert("Dado do Indice 2: " + numeros[2])// mostrando o valor do indice 2
+        alert("Quantidade de Indices no Array: " + numeros.length);//Mostrando a quantidade de indices no array
+
+        var mostraUltimo = numeros.length - 0;
+        alert("Ultimo Indice do Array: " + mostraUltimo);//Mostrando o ultimo dado do array 
+
+        var mostraPromeiro = numeros[0];
+        alert("Primeiro Indice do Array: " + mostraPromeiro);//Mostrando o primeiro dado do array
+
+        alert(numeros);
+        alert(novo);
+        alert(novo2);
+
+        var apaga = numeros.pop();// apagando um  dado no ultimo indice do arrey 
+        alert(numeros);
+        alert("confira os numero depois do POP: " + numeros);
+        var apaga = numeros.pop();
+        var apaga = numeros.pop();
+        var apaga = numeros.pop();
+        alert("confira novamente os numero depois do POP: " + numeros);
+        alert(numeros.length);
+
+    </script>
+</body>
+
+</html>
